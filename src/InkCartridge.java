@@ -7,6 +7,7 @@ public class InkCartridge {
 
     public void refillInk(int current){
         int full = 100;
+        System.out.println("Refilling Toner Cartridge\nAdding " + (100 - current) + "% to Cartridge");
         int needed = full - current;
         setInkLevel(needed);
     }

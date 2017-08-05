@@ -14,6 +14,11 @@ public class Printer {
     }
 
     public void refillToner() {
+        int curLevel = inkCartridge.getInkLevel();
+        inkCartridge.refillInk(curLevel);
+    }
+
+    public void deductPaper(){
 
     }
 
